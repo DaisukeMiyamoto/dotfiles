@@ -1,0 +1,13 @@
+startup_message off
+term xterm-256color
+attrcolor b "^["
+defbce "on"
+
+altscreen on
+autodetach on
+defscrollback 10000
+deflog on
+logfile "$HOME/.screen/screen-%Y%m%d-%n.log"
+
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+
